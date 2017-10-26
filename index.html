@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="assets\css\custom.css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css" href="reset.css">
+    <script type="text/javascript" src="assets\javascript\game.js"></script>
     <meta charset="UTF-8">
     <title>title</title>
   </head>
   <body>
-    You have come to the Hanging Tree, where you will be judged and found wanting. Can you escape? It's only a simple game, but the stakes are high, and so is the pressure.
-
+    <h1>Simple 'Hangman' Game</h1>
+    <form id="hangman">
+        <input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+        <input id="guess" name="guess" type="submit" value="Guess" />
+        <button id="restart" name="restart" type="button">Restart</button>
+    </form>
+    <ul id="letters"></ul>
+    <p id="man"></p>
   </body>
 </html>
